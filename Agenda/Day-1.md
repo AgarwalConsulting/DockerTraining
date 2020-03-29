@@ -6,6 +6,7 @@
 
 - A primer on Microservices
   - 12 Factors for good µService design
+  - [Phoenix Servers](https://martinfowler.com/bliki/PhoenixServer.html)
 - Dependency Hell (The Isolation Problem)
 
 ### Virtualization
@@ -79,3 +80,5 @@
 - Building a docker-like container from scratch using Go
   - [Video](https://www.youtube.com/watch?v=MHv6cWjvQjM&t=1316s)
   - [Code](https://github.com/lizrice/containers-from-scratch)
+
+- [Are containers replacing VMs?](https://www.docker.com/blog/containers-replacing-virtual-machines/)

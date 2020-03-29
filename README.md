@@ -10,7 +10,7 @@ docker run hello-world:latest
 
 ## Steps to create your own image and run a container
 
-* Write your own `Dockerfile`. Documentation: <https://docs.docker.com/engine/reference/builder>
+* Write your own `Dockerfile`. [Documentation](https://docs.docker.com/engine/reference/builder).
   - Refer [hello-go/Dockerfile](https://github.com/AgarwalConsulting/java-training/blob/master/code-samples/08-Docker/hello-go/Dockerfile)
 * `docker build -t <image-name>:<tag-name> .`
 * `docker run <image-name>`
