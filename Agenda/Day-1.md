@@ -1,66 +1,81 @@
-# Docker Training
+# Docker
 
 ## Fundamentals
 
-- Defining the problem
-  - A primer on Microservices
-    - 12 Factors for good µService design
-  - Dependency Hell (The Isolation Problem)
+### Defining the problem
 
-- Virtualization
-  - VMs, Hypervisors and Containers
-  - How is it lightweight?
+- A primer on Microservices
+  - 12 Factors for good µService design
+- Dependency Hell (The Isolation Problem)
 
-- Installation and Setup
-  - Running "Hello, World!" of Docker
+### Virtualization
 
-- Fundamentals
-  - Images and Layers
-  - Image inheritance
-  - Image names and tags
-  - Images vs Containers
-    - Containers
-  - Process lifecycle
-  - Docker Registry / Repository
-    - Private Registries
-  - Image as a black box
+- VMs, Hypervisors and Containers
+- How is it lightweight?
 
-- Docker Cli - Seeing beyond `build` & `run`
+### Installation and Setup
+
+- Running "Hello, World!" of Docker
+
+### Primer
+
+- Images and Layers
+- Image inheritance
+- Image names and tags
+- Images vs Containers
   - Containers
-    - ps
-    - rm
-    - inspect
-    - start
-    - stop
-    - restart
-    - cp
-    - logs
-  - Images
-    - build
-    - images
-    - rmi
-    - run
-      - -d, -p, -it, --name, -e, -v
-    - push
-    - pull
-    - tag
+- Process lifecycle
+- Docker Registry / Repository
+  - Private Registries
+- Image as a black box
 
-- Creating your first image
-  - From a running container
-  - `Dockerfile` (Infrastructure as Code)
-  - Commands
-    - FROM
-    - MAINTAINER
-    - WORKDIR
-    - USER
-    - RUN
-    - EXPOSE
-    - ADD
-    - COPY
-    - ENTRYPOINT
-    - CMD
+### Docker Cli - Seeing beyond `build` & `run`
 
-- Tips
-  - single process per container
-  - use volumes to persist data between restarts
+- Containers
+  - ps
+  - rm
+  - inspect
+  - start
+  - stop
+  - restart
+  - cp
+  - logs
+- Images
+  - build
+  - images
+  - rmi
+  - run
+    - -d, -p, -it, --name, -e, -v
+  - push
+  - pull
+  - tag
+
+### Creating your first image
+
+- From a running container
+- `Dockerfile` (Infrastructure as Code)
+- Commands
+  - FROM
+  - MAINTAINER
+  - WORKDIR
+  - USER
+  - RUN
+  - EXPOSE
+  - ADD
+  - COPY
+  - ENTRYPOINT
+  - CMD
+
+### Tips
+
+- Single process per container
+- Use volumes to persist data between restarts
   - any thing within the container will be thrown away when the container is stopped
+
+---
+
+## References
+
+- Building a docker-like container from scratch using Go
+  - [Video](https://www.youtube.com/watch?v=MHv6cWjvQjM&t=1316s)
+  - [Code](https://github.com/lizrice/containers-from-scratch)
