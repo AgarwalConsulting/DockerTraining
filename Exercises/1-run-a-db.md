@@ -10,6 +10,10 @@ If you aren't able to choose, pick `postgres`!
 
 - Find the image on Docker Hub – review the instructions
 - Run the image locally. Pass in environment variables to allow access to the database and also volume mapping.
+- Create some data in your db:
+  - Check what happens if you kill the container and start another one?
+  - How can you persist data between restarts?
+  - How can you access the db running inside a container from outside the container?
 
 ## Troubleshooting
 
