@@ -25,7 +25,7 @@ I have built an application in a [microservice architecture](https://microservic
 ```
 
 ```
-  # Service C
+  # Service C - user facing
 
   Java 9 process
   Postgres 10
