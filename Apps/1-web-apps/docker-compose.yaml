@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  greeting:
+    restart: on-failure
+    image: gauravagarwalr/spring-greeting
+
+  curl-test:
+    restart: always
+    build:
+      context: curl-test
+    command: sleep 1000
