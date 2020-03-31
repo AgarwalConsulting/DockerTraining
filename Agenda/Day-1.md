@@ -57,7 +57,8 @@
 - `Dockerfile` (Infrastructure as Code)
 - Commands
   - FROM
-  - MAINTAINER
+  - MAINTAINER (deprecated)
+    - LABEL maintainer=""
   - WORKDIR
   - USER
   - RUN
