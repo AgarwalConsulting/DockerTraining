@@ -2,8 +2,8 @@
 
 set -e
 
-docker stop $(docker ps -aq) # Stop all containers
-docker rm $(docker ps -aq) # Remove all containers
+docker ps -aq | xargs -n 1 docker stop # Stop all containers
+docker ps -aq | xargs -n 1 docker rm # Remove all containers
 
 ./scripts/docker-clean-up.sh
 
