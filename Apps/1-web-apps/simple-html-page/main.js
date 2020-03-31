@@ -1,6 +1,6 @@
 $(function () {
   console.log("Loading main...");
-  fetch("http://localhost:8080/greeting").then(function(response) {
+  fetch("http://localhost:8080/greeting", { mode: 'no-cors' }).then(function(response) {
     return response.json();
   }).then(function(resBody) {
     $('.greeting-id').append(resBody.id);

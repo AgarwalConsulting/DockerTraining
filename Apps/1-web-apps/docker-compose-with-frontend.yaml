@@ -1,0 +1,41 @@
+version: "3.7"
+
+services:
+  greeting:
+    restart: on-failure
+    image: gauravagarwalr/spring-greeting
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M
+    networks:
+      - backend
+    ports:
+      - "8080:8080"
+
+  curl-test:
+    build:
+      context: ./curl-test # Directory containing Dockerfile
+    command: sleep 1000
+    restart: always
+    networks:
+      - backend
+
+  frontend:
+    build:
+      context: ./simple-html-page
+    restart: always
+    depends_on:
+      - greeting
+    ports:
+      - "8000:80"
+    networks:
+      - frontend
+
+networks:
+  frontend:
+  backend:
