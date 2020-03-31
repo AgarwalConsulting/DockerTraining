@@ -44,6 +44,11 @@
 ### Docker Networking
 
 - `docker network`
+  - `ls`
+  - `inspect <name>`
+  - `create <name>`
+  - `connect <name> <container-id>`
+    - `--network <name>`
 
 ### Orchestrating your containers
 
