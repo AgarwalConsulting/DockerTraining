@@ -1,6 +1,9 @@
 FROM golang:alpine
+ARG GO_FILE
 WORKDIR /app
-COPY ./hello-looped.go /app
-RUN go build hello-looped.go
+COPY ./${GO_FILE}.go /app
+RUN go build ${GO_FILE}.go
 RUN ls
-ENTRYPOINT ["/app/hello-looped"]
+RUN adduser -D bob
+USER bob
+CMD ["/app/${GO_FILE}"]
