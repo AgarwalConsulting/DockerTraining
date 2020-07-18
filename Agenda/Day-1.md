@@ -5,7 +5,7 @@
 ### Defining the problem
 
 - A primer on Microservices
-  - 12 Factors for good µService design
+  - [12 Factors](https://12-factor-apps.slides.algogrit.com/) for good µService design
   - [Phoenix Servers](https://martinfowler.com/bliki/PhoenixServer.html)
 - Dependency Hell (The Isolation Problem)
 
@@ -13,6 +13,7 @@
 
 - VMs, Hypervisors and Containers
 - How is it lightweight?
+  - LXC
 
 ### Installation and Setup
 
