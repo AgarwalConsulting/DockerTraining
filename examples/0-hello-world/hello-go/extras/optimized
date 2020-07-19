@@ -1,0 +1,8 @@
+FROM golang:alpine AS builder
+WORKDIR /app
+COPY ./hello-looped.go /app
+RUN go build hello-looped.go
+
+FROM scratch
+COPY --from=builder /app/hello-looped .
+ENTRYPOINT ["/hello-looped"]
