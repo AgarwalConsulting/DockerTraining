@@ -3,10 +3,10 @@ version: "3.7"
 services:
   greeting:
     restart: on-failure
-    image: gauravagarwalr/spring-greeting
+    image: agarwalconsulting/spring-greeting
 
   curl-test:
     restart: always
     build:
-      context: curl-test
+      context: ./curl-test
     command: sleep 1000
