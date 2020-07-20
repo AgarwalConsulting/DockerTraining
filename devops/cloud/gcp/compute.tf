@@ -30,6 +30,30 @@ resource "google_compute_instance" "gcp_vm_101" {
   ]
 }
 
+resource "google_compute_firewall" "http-server" {
+  project = var.project_id
+  name    = "gcpvm101rule"
+  network = "default"
+
+  allow {
+    protocol = "tcp"
+    ports = [
+      "80",
+      "8080",
+      "8000",
+      "5000",
+    ]
+  }
+
+  // Allow traffic from everywhere to instances with an http-server tag
+  source_ranges = [
+    "0.0.0.0/0",
+  ]
+  target_tags = [
+    "http-server",
+  ]
+}
+
 # Render a multi-part cloud-init config making use of the part
 # above, and other source files
 data "template_cloudinit_config" "config" {
