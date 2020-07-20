@@ -49,7 +49,7 @@ CREATE TABLE people (
 INSERT INTO people VALUES (1, "John", "Doe", "Colony-1, Mars")
 ```
 
-- Retrieve a value:
+- Retrieve all values:
 
 ```sql
 SELECT * FROM people;
@@ -60,5 +60,6 @@ SELECT * FROM people;
 ```sql
  "\d" # lists all the databases
  "\c <db-name>" # Connect to a particular db
- "\t" # lists all the tables in current db
+ "\l" # lists all the tables in current db
+ "\q" # Quits the client
 ```
