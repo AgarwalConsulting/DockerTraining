@@ -1,0 +1,12 @@
+ARG FLAVOR=latest
+FROM golang:$FLAVOR AS builder
+# FROM golang
+WORKDIR /app
+COPY main.go .
+RUN go build -o fib .
+ENV DURATION=1
+
+FROM scratch
+WORKDIR /app/bin
+COPY --from=builder /app/fib .
+CMD [ "/app/bin/fib" ]
