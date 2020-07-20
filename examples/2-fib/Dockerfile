@@ -1,9 +1,10 @@
-FROM golang
-ARG BINARY_NAME=fib
+ARG FLAVOR=latest
+FROM golang:$FLAVOR
+# FROM golang
+ARG BIN_NAME=fib
 WORKDIR /app
 COPY main.go .
-ENV DURATION 1
-RUN go build -o $BINARY_NAME .
-# CMD /app/$BINARY_NAME
-# CMD [ "/app/fib", "-dur", ${DURATION} ]
-CMD [ "/app/fib" ]
+RUN go build -o $BIN_NAME .
+ENV BIN_NAME=${BIN_NAME:-fib}
+ENV DURATION=1
+CMD ["sh", "-c", "/app/$BIN_NAME"]

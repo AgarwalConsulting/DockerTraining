@@ -1,8 +1,9 @@
 package main
 
 import (
-	"flag"
 	"fmt"
+	"os"
+	"strconv"
 	"time"
 )
 
@@ -14,14 +15,31 @@ func fib() func() int {
 	}
 }
 
+var dur int
+
+func init() {
+	duration, ok := os.LookupEnv("DURATION")
+
+	i, err := strconv.Atoi(duration)
+
+	if !ok || err != nil {
+		dur = 1
+	}
+
+	dur = i
+}
+
 func main() {
-	i := flag.Int("dur", 1, "produce values every x seconds")
-	flag.Parse()
+	// i := flag.Int("dur", 1, "produce values every x seconds")
+	// flag.Parse()
+
+	duration := time.Second * time.Duration(dur)
 
 	next := fib()
+	fmt.Println("Producing values every: ", duration)
 
 	for {
 		fmt.Println("Next: ", next())
-		time.Sleep(time.Second * time.Duration(*i))
+		time.Sleep(duration)
 	}
 }
