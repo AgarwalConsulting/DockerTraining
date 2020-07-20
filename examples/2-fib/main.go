@@ -24,6 +24,7 @@ func init() {
 
 	if !ok || err != nil {
 		dur = 1
+		return
 	}
 
 	dur = i
