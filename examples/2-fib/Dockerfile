@@ -7,4 +7,5 @@ COPY main.go .
 RUN go build -o $BIN_NAME .
 ENV BIN_NAME=${BIN_NAME:-fib}
 ENV DURATION=1
+# CMD [ "/app/$BIN_NAME" ]
 CMD ["sh", "-c", "/app/$BIN_NAME"]
