@@ -16,6 +16,10 @@
   docker run <image-name>:<tag-name>
 ```
 
+### Questions
+
+* What happens when you build the image a second-time?
+
 ## Pushing your first image
 
 ### Steps
@@ -41,3 +45,7 @@ docker push <username/org-name>/<image-name>:<tag-name>
 ```
 
 * Ask another participant to run your image.
+
+### Questions
+
+* What happens when you change the message, rebuild the image and push again?
