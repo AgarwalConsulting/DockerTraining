@@ -1,4 +1,4 @@
-# Hello Go
+# Hello World!
 
 Creating your first image!
 
