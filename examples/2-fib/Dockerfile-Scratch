@@ -1,0 +1,4 @@
+FROM scratch
+WORKDIR /app/bin
+COPY fib .
+CMD [ "/app/bin/fib" ]

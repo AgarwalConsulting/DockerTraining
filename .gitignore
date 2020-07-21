@@ -71,3 +71,4 @@ hs_err_pid*
 examples/1-web-apps/gs-rest-service/target/
 
 examples/0-hello-world/hello-go/hello
+examples/2-fib/fib
