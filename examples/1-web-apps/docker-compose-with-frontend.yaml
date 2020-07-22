@@ -3,7 +3,7 @@ version: "3.7"
 services:
   greeting:
     restart: on-failure
-    image: gauravagarwalr/spring-greeting
+    image: agarwalconsulting/spring-greeting
     deploy:
       resources:
         limits:

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker run -it gauravagarwalr/hello-go:tiny
+docker run -it agarwalconsulting/hello-go:tiny

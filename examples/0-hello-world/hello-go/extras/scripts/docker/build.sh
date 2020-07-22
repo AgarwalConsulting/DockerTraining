@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# docker build -t gauravagarwalr/hello-go .
-# docker push gauravagarwalr/hello-go
+# docker build -t agarwalconsulting/hello-go .
+# docker push agarwalconsulting/hello-go
 
-docker build -t gauravagarwalr/hello-go:tiny -f optimized .
-docker push gauravagarwalr/hello-go:tiny
+docker build -t agarwalconsulting/hello-go:tiny -f optimized .
+docker push agarwalconsulting/hello-go:tiny
