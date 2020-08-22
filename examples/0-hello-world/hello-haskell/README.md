@@ -6,7 +6,7 @@ Creating your first image...
 
 * Create a `Dockerfile`, with some instructions...
 
-Refer Slide: https://docker-training.slides.algogrit.com/#35
+Refer Slide: https://docker.slides.agarwalconsulting.io/#35
 Refer Documentation: https://docs.docker.com/engine/reference/builder/
 
 * Build the image

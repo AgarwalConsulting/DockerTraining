@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body {
+  background: #444;
+  font-family: 'Droid Serif';
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+.remark-slide-content {
+  background: #333;
+  color: white;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.left-column {
+  color: #ccc;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+
+.left-column strong {
+  color: #eee;
+}
+
+.tarkalabs-logo img {
+  max-height: 20px;
+}
+
+.signature {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+img {
+  background-size: cover;
+  max-width: 100%;
+}
+
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+
+.image-credits {
+  font-size: 10px;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+.image-credits::before {
+  font-size: 10px;
+  content: 'Image Credits: ';
+}
+
+.content-credits {
+  font-size: 10px;
+  position: absolute;
+  bottom: 55px;
+  right: 20px;
+}
+.content-credits::before {
+  font-size: 10px;
+  content: 'Content Credits: ';
+}
+
+body.light {
+  background: #333;
+}
+
+body.light .remark-slide-content {
+  background: white;
+  color: #333;
+}
+
+body.light a {
+  color: #888;
+}
+
+body.light .left-column {
+  color: #888;
+}
+
+body.light .left-column strong {
+  color: #444;
+}
+
+code {
+  display: inline-block !important;
+  text-align: left;
+}
