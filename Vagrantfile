@@ -69,9 +69,9 @@ Vagrant.configure("2") do |config|
 
     apt-get install -y tmux htop
 
+    # Install and configure docker (https://docs.docker.com/engine/install/ubuntu/)
     apt-get remove -y docker docker-engine docker.io containerd runc
 
-    # Install and configure docker (https://docs.docker.com/engine/install/ubuntu/)
     apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
     echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
