@@ -205,7 +205,7 @@ class: center, middle
 
 ![VM vs Container](assets/images/vms-vs-containers.jpg)
 
-.image-credits[https://www.youtube.com/watch?v=TvnZTi_gaNc]
+.image-credits[https://www.weave.works/blog/a-practical-guide-to-choosing-between-docker-containers-and-vms]
 
 ---
 
