@@ -13,7 +13,7 @@
 
 - VMs, Hypervisors and Containers
 - How is it lightweight?
-  - LXC
+  - containerd/runc
 
 ### Installation and Setup
 
