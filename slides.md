@@ -651,16 +651,6 @@ class: center, middle
 ---
 class: center, middle
 
-### Build vs Run-time flags
-
----
-class: center, middle
-
-Take a look at fibonacci generator...
-
----
-class: center, middle
-
 ### Working with volumes
 
 .content-credits[https://docs.docker.com/storage/]
@@ -790,6 +780,16 @@ or
 class: center, middle
 
 Multi Stage builds
+
+---
+class: center, middle
+
+### Build vs Run-time flags
+
+---
+class: center, middle
+
+Take a look at fibonacci generator...
 
 ---
 class: center, middle
