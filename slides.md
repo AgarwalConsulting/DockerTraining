@@ -601,7 +601,6 @@ class: center, middle
 - commit
 
 - build
-  - Flag: --build-arg
 
 - images
 
@@ -648,6 +647,16 @@ class: center, middle
 class: center, middle
 
 ## Advanced
+
+---
+class: center, middle
+
+### Build vs Run-time flags
+
+---
+class: center, middle
+
+Take a look at fibonacci generator...
 
 ---
 class: center, middle
@@ -723,8 +732,6 @@ class: center, middle
 ---
 
 - Containers
-  - docker `kill`
-
   - docker `pause`/`unpause`
 
   - docker `rename`
@@ -739,9 +746,6 @@ class: center, middle
 ---
 
 - Images
-  - docker `rmi`
-
-  - docker `tag`
 
   - docker `save`
 
