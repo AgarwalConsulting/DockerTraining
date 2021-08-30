@@ -478,6 +478,11 @@ CMD # provides defaults to be run after the ENTRYPOINT.
 [More...](https://docs.docker.com/engine/reference/builder/)
 
 ---
+class: center, middle
+
+*Exercise*: Create a Docker image with your favorite programming language installed
+
+---
 
 #### Layers
 
