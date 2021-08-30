@@ -105,3 +105,4 @@ buildNumber.properties
 *.box
 
 # End of https://www.toptal.com/developers/gitignore/api/vagrant
+live-examples/
