@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
     apt-get update
     apt-get upgrade -y
 
-    apt-get install -y tmux htop
+    apt-get install -y tmux htop curl wget tree
 
     # Install and configure docker (https://docs.docker.com/engine/install/ubuntu/)
     apt-get remove -y docker docker-engine docker.io containerd runc
