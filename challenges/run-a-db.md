@@ -46,7 +46,7 @@ CREATE TABLE people (
 - Insert a value:
 
 ```sql
-INSERT INTO people VALUES (1, "John", "Doe", "Colony-1, Mars");
+INSERT INTO people VALUES (1, 'John', 'Doe', 'Colony-1, Mars');
 ```
 
 - Retrieve all values:
