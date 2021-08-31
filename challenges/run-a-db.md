@@ -40,13 +40,13 @@ CREATE TABLE people (
   FirstName varchar(255),
   LastName varchar(255),
   Address varchar(255)
-)
+);
 ```
 
 - Insert a value:
 
 ```sql
-INSERT INTO people VALUES (1, "John", "Doe", "Colony-1, Mars")
+INSERT INTO people VALUES (1, "John", "Doe", "Colony-1, Mars");
 ```
 
 - Retrieve all values:
