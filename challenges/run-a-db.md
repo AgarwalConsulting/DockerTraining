@@ -58,8 +58,9 @@ SELECT * FROM people;
 - Other commands:
 
 ```sql
- "\d" # lists all the databases
+ "\l" # lists all the databases
  "\c <db-name>" # Connect to a particular db
- "\l" # lists all the tables in current db
+ "\d" # lists all the tables in current db
+ "\d <table-name>" # Shows the schema
  "\q" # Quits the client
 ```
