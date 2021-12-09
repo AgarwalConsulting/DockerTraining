@@ -14,7 +14,7 @@ You might have to restart your system during this phase.
 Then from Terminal (Mac/Linux) or Git Bash (Windows), execute the following...
 
 ```bash
-vagrant version
+vagrant --version
 
 vagrant plugin install vagrant-vbguest
 ```
