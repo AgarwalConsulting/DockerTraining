@@ -21,7 +21,8 @@ If you aren't able to connect to the db on the running container in spite of add
 
 ## Working with Postgres
 
-- [Install](https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows/) the `psql` client on your machine.
+- Install the `psql` client on your machine.
+  - For Ubuntu: `sudo apt-get install -y postgresql-client`
 - Postgres connection string format:
 
 `postgres://<username>:<password>@<hostname>:5432/<db-name>?sslmode=disable`
