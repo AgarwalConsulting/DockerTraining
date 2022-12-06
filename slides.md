@@ -480,7 +480,7 @@ CMD # provides defaults to be run after the ENTRYPOINT.
 ---
 class: center, middle
 
-*Exercise*: Create a Docker image with your favorite programming language installed
+*Exercise*: Create a Docker image with your favorite [programming language installed](https://github.com/AgarwalConsulting/DockerTraining/blob/master/challenges/hello-world-in-your-language.md)
 
 ---
 
