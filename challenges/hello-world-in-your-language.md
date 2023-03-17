@@ -4,7 +4,7 @@
 
 - If in doubt use python: `print("Hello World from Python!")` stored in a hello.py file
 
-- Write a Dockerfile with the instructions you used in the previous exercise, or you choose a different base image.
+- Write a Dockerfile with the instructions similar to [this](https://github.com/AgarwalConsulting/DockerTraining/blob/master/examples/0-hello-world/hello-haskell/Dockerfile), or you choose a different base image.
 
 - Build the image: `docker build -t <image-name> .`
 
